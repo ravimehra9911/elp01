@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: black;
+}
+
+a {
+  font-weight: 600 !important;
+  color: black !important;
+}
+
+.heroTitle {
+  font-size: 4rem;
+}
