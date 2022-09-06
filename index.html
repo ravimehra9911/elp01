@@ -44,7 +44,7 @@
                         <div class="collapse navbar-collapse order-md-1" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./index.html">Home</a>
+                                    <a class="nav-link" href="./">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Features</a>
@@ -66,22 +66,20 @@
                     <p>His ideas somewher me to founding so unable late the sucess.</p>
                     <a href="./registration.html"> <button type="button" class="btn buttonbg mx-2 my-2">Enroll
                             Today</button></a>
-
+                    <button type="button" class="btn buttonbg mx-2 my-2">Enroll
+                        Today</button>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center">
-                    <img src="/images/HeroSection.jpg" class="img-fluid">
+                    <img src="./images/HeroSection.jpg" class="img-fluid" alt="ELP Slide">
 
                 </div>
             </div>
         </section>
 
-
-
         <section class="boxgradient rounded-5">
             <div class="row d-flex align-items-center my-5 p-2 ">
                 <div class="col-md-6 d-flex justify-content-center">
                     <h1 class="heroTitle">We add value to <br> our student's <br>journey</h1>
-
                 </div>
                 <div class="col-md-6">
                     <div class="row">
@@ -160,12 +158,7 @@
 
                 </div>
             </div>
-
-
-
         </section>
-
-
 
         <section class="bg-gradient-1 text-center p-5">
             <h1>Start Learning Today <br> Grow Your Career</h1>
@@ -173,8 +166,6 @@
                 Consectetur consequuntur
             </p>
             <a href="./registration.html"> <button type="button" class="btn buttonbg mx-2">Learn Now</button></a>
-
-
         </section>
 
         <footer>
@@ -187,58 +178,11 @@
                     <i class="lni lni-instagram-filled"></i>
                     <i class="lni lni-linkedin-original"></i>
                     <i class="lni lni-youtube"></i>
-
                 </div>
             </div>
         </footer>
 
     </div>
-
-
-    <div class="">
-        <div class="col-md-6">
-            <label runat="server" id="lblLeaving">Migration/Leaving Certificate of class 10th<span
-                    class="required">*</span></label>
-            <asp:FileUpload ID="FileUploadLeavingCertificate" runat="server" accept=".jpeg,.png,.jpg" BackColor="White"
-                Width="100%" Font-Size="Medium" TabIndex="4" Height="35px" onchange="uploadleavingcert()" />
-            <div class="form-text text-muted">
-                File Size Should be less than 2Mb. The Image formats should be .jpg or .jpeg.
-            </div>
-            <asp:Button runat="server" ID="hiddenLeavingUpload" Text="" Style="display: none;"
-                OnClick="hiddenLeavingUpload_Click" />
-
-            <script type="text/javascript" language="javascript">
-                function showBrowseDialog() {
-                    var fileuploadctrl = document.getElementById('<%= FileUploadLeavingCertificate.ClientID %>');
-                    fileuploadctrl.click();
-                }
-
-                function uploadleavingcert() {
-                    var btn = document.getElementById('<%= hiddenLeavingUpload.ClientID %>');
-                    btn.click();
-                }
-            </script>
-        </div>
-
-        <div class="col-md-6 form-control">
-            <asp:Image ID="i_Image" runat="server" Height="50px" Width="50px" />
-            <label id="lblAlertMessageLeavingCertificate" runat="server"
-                style="margin-bottom: 0px; padding: 0px; color: green; text-align: left; word-wrap: break-word"></label>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
