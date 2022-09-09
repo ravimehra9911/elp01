@@ -12,10 +12,6 @@ a {
   color: black !important;
 }
 
-.heroTitle {
-  font-size: 4rem;
-}
-
 .boxgradient {
   background: hsla(191, 88%, 81%, 1);
 
@@ -58,15 +54,21 @@ a {
   font-size: 100px !important;
   padding: 20px;
   border-radius: 25px;
+  background-color: #069488;
 }
 
 .buttonbg {
   background-color: #069488;
+  border: 2px solid #069488;
   color: #fff;
 }
 
 .buttonbg:hover {
   background-color: #fff;
   border: 2px solid #069488;
+  color: #069488;
+}
+
+.social > i {
   color: #069488;
 }
